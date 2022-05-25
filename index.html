@@ -2,7 +2,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB問診票</title>
+    <title>性格診断</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
@@ -10,26 +10,143 @@
 <body>
 
     <form class="w-75 mx-auto">
-        <p class="mt-3">氏名(全角ひらがな)</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
-        </div>
-        <p class="mt-3">診察券番号(半角数字 不明の場合は"0")</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="bangou" required>
-        </div>
-        <p class="mt-3">一番お困りのことは?</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="shushoujou" required>
-        </div>
-        <p class="mt-3">いつからどのような様子ですか?</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="keika" required>
-        </div>
-        <p class="mt-3">37.5度以上の発熱の有無("はい" か "いいえ")</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="hatunetu" required>
-        </div>
+    
+        <p class="mt-3">Ｑ１：負けず嫌いなほうだと思う。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a01" id="a01y" value="1">
+            <label class="form-check-label" for="a01y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a01" id="a01n" value="0" checked>
+            <label class="form-check-label" for="a01n">No</label>
+          </div>
+        <p class="mt-3">Ｑ２：食事のとき、好きなおかずは最後までとっておく。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a02" id="a02y" value="1">
+            <label class="form-check-label" for="a02y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a02" id="a02n" value="0" checked>
+            <label class="form-check-label" for="a02n">No</label>
+          </div>
+        <p class="mt-3">Ｑ３：カフェやレストランでは、メニューを決めるのに時間がかかる。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a03" id="a03y" value="1">
+            <label class="form-check-label" for="a03y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a03" id="a03n" value="0" checked>
+            <label class="form-check-label" for="a03n">No</label>
+          </div>
+        <p class="mt-3">Ｑ４：お正月には必ず「今年の目標」を立て、達成に向けて頑張る。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a04" id="a04y" value="1">
+            <label class="form-check-label" for="a04y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a04" id="a04n" value="0" checked>
+            <label class="form-check-label" for="a04n">No</label>
+          </div>
+        <p class="mt-3">Ｑ５：待ち合わせに遅刻してしまうことがよくある。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a05" id="a05y" value="1">
+            <label class="form-check-label" for="a05y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a05" id="a05n" value="0" checked>
+            <label class="form-check-label" for="a05n">No</label>
+          </div>
+        <p class="mt-3">Ｑ６：スーパーのレジで、早く進みそうな列を見極めるのが上手いほうだ。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a06" id="a06y" value="1">
+            <label class="form-check-label" for="a06y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a06" id="a06n" value="0" checked>
+            <label class="form-check-label" for="a06n">No</label>
+          </div>
+        <p class="mt-3">Ｑ７：いやな思いをすると、わりと根に持つほうだ。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a07" id="a07y" value="1">
+            <label class="form-check-label" for="a07y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a07" id="a07n" value="0" checked>
+            <label class="form-check-label" for="a07n">No</label>
+          </div>
+        <p class="mt-3">Ｑ８：雑誌やテレビの占いコーナーはよくチェックするほうだ。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a08" id="a08y" value="1">
+            <label class="form-check-label" for="a08y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a08" id="a08n" value="0" checked>
+            <label class="form-check-label" for="a08n">No</label>
+          </div>
+        <p class="mt-3">Ｑ９：部屋は整理整頓されているほうだと思う。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a09" id="a09y" value="1">
+            <label class="form-check-label" for="a09y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a09" id="a09n" value="0" checked>
+            <label class="form-check-label" for="a09n">No</label>
+          </div>
+        <p class="mt-3">Ｑ１０：買ったは良いけれど、ほとんど着たことのない服がある。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a10" id="a10y" value="1">
+            <label class="form-check-label" for="a10y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a10" id="a10n" value="0" checked>
+            <label class="form-check-label" for="a10n">No</label>
+          </div>
+        <p class="mt-3">Ｑ１１：忘れ物をすることがしょっちゅうある。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a11" id="a11y" value="1">
+            <label class="form-check-label" for="a11y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a11" id="a11n" value="0" checked>
+            <label class="form-check-label" for="a11n">No</label>
+          </div>
+        <p class="mt-3">Ｑ１２：メールの返信がないと、嫌われているかもと心配になる。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a12" id="a12y" value="1">
+            <label class="form-check-label" for="a12y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a12" id="a12n" value="0" checked>
+            <label class="form-check-label" for="a12n">No</label>
+          </div>
+        <p class="mt-3">Ｑ１３：不安なことがあると、食欲がなくなったり眠れなくなったりする。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a13" id="a13y" value="1">
+            <label class="form-check-label" for="a13y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a13" id="a13n" value="0" checked>
+            <label class="form-check-label" for="a13n">No</label>
+          </div>
+        <p class="mt-3">Ｑ１４：ものを捨てられなくて、なんでも取っておくほうだ。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a14" id="a14y" value="1">
+            <label class="form-check-label" for="a14y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a14" id="a14n" value="0" checked>
+            <label class="form-check-label" for="a14n">No</label>
+          </div>
+        <p class="mt-3">Ｑ１５：休みの日は、家の中でじっとしているより遊びに行くほうが好きだ。</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a15" id="a15y" value="1">
+            <label class="form-check-label" for="a15y">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="a15" id="a15n" value="0" checked>
+            <label class="form-check-label" for="a15n">No</label>
+          </div>
+        <P></P>
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
 
@@ -71,12 +188,24 @@
 
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
-                const bangou = $('input[name="bangou"]').val();
-                const shushoujou  = $('input[name="shushoujou"]').val();
-                const keika  = $('input[name="keika"]').val();
-                const hatunetu = $('input[name="hatunetu"]').val();
-                const msg = `${name}\n${bangou}\n${shushoujou}\n${keika}\n${hatunetu}`;
+ 
+                const a01 = $('input[name="a01"]').val();
+                const a02 = $('input[name="a02"]').val();
+                const a03 = $('input[name="a03"]').val();
+                const a04 = $('input[name="a04"]').val();
+                const a05 = $('input[name="a05"]').val();
+                const a06 = $('input[name="a06"]').val();
+                const a07 = $('input[name="a07"]').val();
+                const a08 = $('input[name="a08"]').val();
+                const a09 = $('input[name="a09"]').val();
+                const a10 = $('input[name="a10"]').val();
+                const a11 = $('input[name="a11"]').val();
+                const a12 = $('input[name="a12"]').val();
+                const a13 = $('input[name="a13"]').val();
+                const a14 = $('input[name="a14"]').val();
+                const a15 = $('input[name="a15"]').val();
+ 
+                const msg = `${a01}\n${a02}\n${a03}\n${a04}\n${a05}\n${a06}\n${a07}\n${a08}\n${a09}\n${a10}\n${a11}\n${a12}\n${a13}\n${a14}\n${a15}`;
                 sendText(msg);
                 return false;
             });
