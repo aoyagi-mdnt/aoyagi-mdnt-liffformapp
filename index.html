@@ -189,21 +189,21 @@
         $(function () {
             $('form').submit(function () {
  
-                const a01 = $('input[name="a01"]').val();
-                const a02 = $('input[name="a02"]').val();
-                const a03 = $('input[name="a03"]').val();
-                const a04 = $('input[name="a04"]').val();
-                const a05 = $('input[name="a05"]').val();
-                const a06 = $('input[name="a06"]').val();
-                const a07 = $('input[name="a07"]').val();
-                const a08 = $('input[name="a08"]').val();
-                const a09 = $('input[name="a09"]').val();
-                const a10 = $('input[name="a10"]').val();
-                const a11 = $('input[name="a11"]').val();
-                const a12 = $('input[name="a12"]').val();
-                const a13 = $('input[name="a13"]').val();
-                const a14 = $('input[name="a14"]').val();
-                const a15 = $('input[name="a15"]').val();
+                const a01 = $('input:checked[name="a01"]').val();
+                const a02 = $('input:checked[name="a02"]').val();
+                const a03 = $('input:checked[name="a03"]').val();
+                const a04 = $('input:checked[name="a04"]').val();
+                const a05 = $('input:checked[name="a05"]').val();
+                const a06 = $('input:checked[name="a06"]').val();
+                const a07 = $('input:checked[name="a07"]').val();
+                const a08 = $('input:checked[name="a08"]').val();
+                const a09 = $('input:checked[name="a09"]').val();
+                const a10 = $('input:checked[name="a10"]').val();
+                const a11 = $('input:checked[name="a11"]').val();
+                const a12 = $('input:checked[name="a12"]').val();
+                const a13 = $('input:checked[name="a13"]').val();
+                const a14 = $('input:checked[name="a14"]').val();
+                const a15 = $('input:checked[name="a15"]').val();
  
                 const msg = `${a01}\n${a02}\n${a03}\n${a04}\n${a05}\n${a06}\n${a07}\n${a08}\n${a09}\n${a10}\n${a11}\n${a12}\n${a13}\n${a14}\n${a15}`;
                 sendText(msg);
